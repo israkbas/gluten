@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267453690033",
+    "project_id": "gluten-c185f",
+    "storage_bucket": "gluten-c185f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267453690033:android:5e573db6d377bce7c7b290",
+        "android_client_info": {
+          "package_name": "com.example.gluten"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6uX93JKMLlwmvXZ1deLM8PFaeuCZE8uU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
