@@ -59,8 +59,8 @@ class _LoginPageState extends State<LoginPage> {
                       loginButton(),
                       const SizedBox(height: 30.0),
                       registerNowText(),
-                      const SizedBox(height: 30.0),
-                      gmailButton(),
+                      // const SizedBox(height: 30.0),
+                      // gmailButton(),
                     ],
                   ),
                 ),
@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
       'GlutenCheck',
       style: TextStyle(
         color: Color.fromARGB(255, 155, 142, 99),
-        fontSize: 40,
+        fontSize: 30,
         fontWeight: FontWeight.w600,
         letterSpacing: 2,
       ),
@@ -213,38 +213,38 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  gmailButton() {
-    return Material(
-      elevation: 5,
-      borderRadius: BorderRadius.circular(8.0), // 30.0
-      color: Color.fromARGB(255, 194, 184, 149),
-      child: MaterialButton(
-        padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-        minWidth: MediaQuery.of(context).size.width,
-        onPressed: () {
-          /* authService.signInWithGoogle().then(
-            (value) {
-              ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('Google İle Giriş Yapıldı')));
-              Get.offAll(() => MyHomePage());
-              /*  Navigator.pushReplacement(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => RootApp(),
-                ),
-              ); */
-            },
-          ); */
-        },
-        child: const Text(
-          'Google ile Giriş Yap',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
-  }
+  // gmailButton() {
+  //   return Material(
+  //     elevation: 5,
+  //     borderRadius: BorderRadius.circular(8.0), // 30.0
+  //     color: Color.fromARGB(255, 194, 184, 149),
+  //     child: MaterialButton(
+  //       padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
+  //       minWidth: MediaQuery.of(context).size.width,
+  //       onPressed: () {
+  //         /* authService.signInWithGoogle().then(
+  //           (value) {
+  //             ScaffoldMessenger.of(context).showSnackBar(
+  //                 const SnackBar(content: Text('Google İle Giriş Yapıldı')));
+  //             Get.offAll(() => MyHomePage());
+  //             /*  Navigator.pushReplacement(
+  //               context,
+  //               MaterialPageRoute(
+  //                 builder: (context) => RootApp(),
+  //               ),
+  //             ); */
+  //           },
+  //         ); */
+  //       },
+  //       child: const Text(
+  //         'Google ile Giriş Yap',
+  //         textAlign: TextAlign.center,
+  //         style: TextStyle(
+  //             fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
+  //       ),
+  //     ),
+  //   );
+  // }
 
   registerNowText() {
     return Row(

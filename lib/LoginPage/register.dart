@@ -124,7 +124,6 @@ class _RegisterPageState extends State<RegisterPage> {
       keyboardType: TextInputType.name,
       validator: (value) {
         if (value!.isEmpty) return ("Lütfen Email Girin!");
-        // reg expression for email validation
         if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]").hasMatch(value)) {
           return ("Lütfen Email Girin");
         }
@@ -198,7 +197,7 @@ class _RegisterPageState extends State<RegisterPage> {
   registerButton() {
     return Material(
       elevation: 5,
-      borderRadius: BorderRadius.circular(8.0), // 30.0
+      borderRadius: BorderRadius.circular(8.0),
       color: Color.fromARGB(255, 194, 184, 149),
       child: MaterialButton(
         padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),

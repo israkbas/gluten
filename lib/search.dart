@@ -14,7 +14,6 @@ class _SearchPageState extends State<SearchPage> {
   @override
   void initState() {
     super.initState();
-    // Initialize the originalList here
     originalList = [];
   }
 
@@ -57,7 +56,6 @@ class _SearchPageState extends State<SearchPage> {
 
                       return GestureDetector(
                         onTap: () {
-                          // Show additional information on item click
                           showAlertDialog(context, ilac);
                         },
                         child: ListTile(
@@ -85,7 +83,6 @@ class _SearchPageState extends State<SearchPage> {
           return ilac['Ilaç Adı'].toString().toLowerCase().contains(query);
         }).toList();
       } else {
-        // Reset the list if the query is empty
         filteredList = List.from(originalList);
       }
     });
@@ -101,7 +98,6 @@ class _SearchPageState extends State<SearchPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('Reçete Turu: ${ilac['Reçete Turu'].toString()}'),
-              // Add more fields as needed
             ],
           ),
           actions: [

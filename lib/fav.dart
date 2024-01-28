@@ -7,7 +7,10 @@ class Fav extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'GlutenCheck',
       home: Scaffold(
-        body: Container(),
+        body: Container(
+//Bu sayfa uygulamanın güncellenmesi halinde veriler üzerinde düzeltme yapılarak tasarlanacaktır.
+
+            ),
       ),
     );
   }

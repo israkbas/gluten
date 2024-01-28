@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:gluten_check/LoginPage/login.dart';
-import 'package:gluten_check/MyHomePage.dart';
 import 'package:gluten_check/firebase_options.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,9 +22,7 @@ class GlutenScanner extends StatelessWidget {
         primaryColor: Color.fromARGB(255, 223, 209, 189),
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          // Varsayılan renk  tanımlandı
           seedColor: Color.fromARGB(255, 223, 209, 189),
-          // Varsayılan parlaklık
           brightness: Brightness.light,
         ),
         textTheme: TextTheme(
@@ -37,7 +34,7 @@ class GlutenScanner extends StatelessWidget {
           displaySmall: GoogleFonts.pacifico(),
         ),
       ),
-      home: MyHomePage(),
+      home: LoginPage(),
     );
   }
 }

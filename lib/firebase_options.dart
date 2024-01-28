@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyABRefk-wnMLg02a_eNA__ths7YvZ7a51s',
-    appId: '1:464388012261:web:c66021ab56583b4e7a3c0c',
-    messagingSenderId: '464388012261',
-    projectId: 'gluten-b0992',
-    authDomain: 'gluten-b0992.firebaseapp.com',
-    storageBucket: 'gluten-b0992.appspot.com',
-    measurementId: 'G-TD1Y48KD1J',
+    apiKey: 'AIzaSyC0RxwdIZrUM8hovOI6yM8QryqBG8NkZeg',
+    appId: '1:267453690033:web:692859e3102838ddc7b290',
+    messagingSenderId: '267453690033',
+    projectId: 'gluten-c185f',
+    authDomain: 'gluten-c185f.firebaseapp.com',
+    storageBucket: 'gluten-c185f.appspot.com',
+    measurementId: 'G-8X1L2YE8R8',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB762gwFWlWeALC3mrhJdiH6jvkAh6-V48',
-    appId: '1:464388012261:android:db1cfab687ecee5e7a3c0c',
-    messagingSenderId: '464388012261',
-    projectId: 'gluten-b0992',
-    storageBucket: 'gluten-b0992.appspot.com',
+    apiKey: 'AIzaSyB6uX93JKMLlwmvXZ1deLM8PFaeuCZE8uU',
+    appId: '1:267453690033:android:5e573db6d377bce7c7b290',
+    messagingSenderId: '267453690033',
+    projectId: 'gluten-c185f',
+    storageBucket: 'gluten-c185f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDIkLvvyNssKMno1BB1V2HsqDC8NCsQPu4',
-    appId: '1:464388012261:ios:adeab853f834fd407a3c0c',
-    messagingSenderId: '464388012261',
-    projectId: 'gluten-b0992',
-    storageBucket: 'gluten-b0992.appspot.com',
+    apiKey: 'AIzaSyBNHaMkY0iwu70PtsvU8OH97xdd0BPEIqQ',
+    appId: '1:267453690033:ios:654a5c4e10d4e147c7b290',
+    messagingSenderId: '267453690033',
+    projectId: 'gluten-c185f',
+    storageBucket: 'gluten-c185f.appspot.com',
     iosBundleId: 'com.example.gluten',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDIkLvvyNssKMno1BB1V2HsqDC8NCsQPu4',
-    appId: '1:464388012261:ios:9cc1cc09b4a0cf267a3c0c',
-    messagingSenderId: '464388012261',
-    projectId: 'gluten-b0992',
-    storageBucket: 'gluten-b0992.appspot.com',
+    apiKey: 'AIzaSyBNHaMkY0iwu70PtsvU8OH97xdd0BPEIqQ',
+    appId: '1:267453690033:ios:eb1867349a164bebc7b290',
+    messagingSenderId: '267453690033',
+    projectId: 'gluten-c185f',
+    storageBucket: 'gluten-c185f.appspot.com',
     iosBundleId: 'com.example.gluten.RunnerTests',
   );
 }

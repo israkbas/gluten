@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gluten_check/LoginPage/login.dart';
 import 'package:gluten_check/fav.dart';
 import 'package:gluten_check/home.dart';
-import 'package:gluten_check/search.dart';
 import 'package:gluten_check/urunBildir.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -26,10 +26,11 @@ class _MyHomePageState extends State<MyHomePage> {
       case 0:
         return Home();
       case 1:
-        return SearchPage();
-      // return HomePage(); // Buraya 'Home' sayfanızın widget'ını ekleyin.
-      case 2:
         return Fav();
+      // Veriler düzenlenerek favoriler sayfası yapılabilir.
+      // Veri boyutu çok fazla olduğundan düzenlenemedi. Daha sonra güncellemede bütün verilere false değeri verilecek
+      // daha sonra icona tıklandığında true dönecek ve favoriler ekranına eklenecek.
+
       default:
         return Container();
     }
@@ -89,18 +90,21 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => bildir()),
+                  MaterialPageRoute(builder: (context) => Oneri()),
                 );
               },
             ),
             ListTile(
               title: Text('Çıkış Yap'),
               onTap: () {
-                // İlgili Drawer öğesine tıklanınca yapılacak işlemleri buraya ekleyebilirsiniz
-                Navigator.pop(context);
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => LoginPage(),
+                  ),
+                );
               },
             ),
-            // Buraya istediğiniz kadar Drawer öğesi ekleyebilirsiniz
           ],
         ),
       ),
